@@ -2,17 +2,19 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  background-color: #000;
+}
+body {
+  background-color: #030819;
   font-family: 'Montserrat', sans-serif;
 }
 
 a {
-  color: #666;
+  color: #3a506b;
 }
 
 a:hover {
   text-decoration: none;
-  color: #fff;
+  color: inherit;
 }
 /* Navbar */
 nav {
@@ -22,31 +24,46 @@ nav {
 }
 
 .logo {
-  color: #fff;
+  color: #5bc0be;
   font-family: 'Poppins', sans-serif;
   margin: 10px 0;
+  letter-spacing: 0.2em;
 }
 
-/* Body */
-.intro-page {
-  height: 91vh;
-  width: 100%;
+/* Main */
+#main {
+  height: 90vh;
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
 .box {
-  border: #fff solid 1px;
-  border-radius: 10px;
   height: 200px;
   width: 200px;
-  min-width: 50%;
+  display: inline-block;
+  margin: 1em;
+  text-align: center;
+  border-radius: 5%;
+  border: 2px solid #1c2541;
+  font-size: 1.3rem;
+}
+
+.link-title {
   display: flex;
   justify-content: center;
   align-items: center;
+  height: 100%;
 }
 
+.box:hover {
+  border-color: #3a506b;
+  transform: translateY(-5px);
+  box-shadow: 0em 0em 0.5em 0.15em rgb(111, 255, 231);
+  color: #6fffe9;
+  transition: all 0.2s;
+  cursor: pointer;
+}
 
 /* Footer */
 footer {
@@ -58,9 +75,9 @@ footer {
 
 .social-logo {
   margin: 5px 10px;
-  color: #666;
+  color: #1c2541;
 }
 
 .social-logo:hover {
-  color: #fff;
+  color: #6fffe9;
 }
