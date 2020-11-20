@@ -1,4 +1,4 @@
-* {
+*  {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
@@ -28,7 +28,7 @@ a:hover {
   flex-direction: column;
   text-align: center;
   font-size: 3rem;
-  color: #5bc0be;
+  color: #6fffe9;
   
 }
 
@@ -36,6 +36,47 @@ a:hover {
   border-radius: 1em;
   padding: 20px;
   animation: blink 4s linear infinite;
+}
+
+.intro {
+  background: #000;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.intro-text {
+  color: #6fffe9;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 3rem;
+}
+
+.slider {
+  background: rgb(9, 22, 37);
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transform: translateY(100%);
+}
+
+.hide {
+  background: black;
+  overflow: hidden;
+}
+
+.hide span {
+  transform: translateY(100%);
+  display: inline-block;
 }
 
 @keyframes blink {
@@ -57,6 +98,7 @@ a:hover {
     padding-bottom: 10px;
   }
 }
+
 /* Footer */
 footer {
   display: flex;
